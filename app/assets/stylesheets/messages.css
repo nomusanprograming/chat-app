@@ -62,6 +62,25 @@
 .chat-header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
 }
 
 /* メインの真ん中 */
@@ -69,6 +88,35 @@
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+/* メッセージ */
+.message {
+  padding: 10px 0;
+}
+
+.message-header {
+  color: #434a54;
+  display: flex;
+}
+
+.message-name {
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999999;
+  font-size: 12px;
+  padding-left:10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+.message-body {
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 /* メインの下 */
@@ -76,4 +124,45 @@
   background-color: #dddddd;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-input {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+
+/* テキスト入力 */
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+/* 送信ボタン */
+.form-submit {
+  background-color: #38aef0;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+/* 画像ファイル選択ボタン */
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: #ffffff;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
